@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011A4B181C09232700E5B76A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 011A4B171C09232700E5B76A /* AppDelegate.m */; };
+		011A4B1B1C09232700E5B76A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011A4B1A1C09232700E5B76A /* main.m */; };
+		011A4B1E1C09232700E5B76A /* FigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011A4B1D1C09232700E5B76A /* FigureViewController.m */; };
+		011A4B201C09232700E5B76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011A4B1F1C09232700E5B76A /* Assets.xcassets */; };
+		011A4B231C09232700E5B76A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011A4B211C09232700E5B76A /* Main.storyboard */; };
+		011A4B4E1C0924DF00E5B76A /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011A4B4D1C0924DF00E5B76A /* SceneKit.framework */; };
+		011A4B511C0A69BB00E5B76A /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 011A4B501C0A69BB00E5B76A /* Bridge.m */; };
+		E7839222497F9F03FB3E03EA /* libPods-DegreeX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 559CF42805159435A723C13C /* libPods-DegreeX.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		011A4B131C09232700E5B76A /* DegreeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DegreeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		011A4B161C09232700E5B76A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		011A4B171C09232700E5B76A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		011A4B1A1C09232700E5B76A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		011A4B1C1C09232700E5B76A /* FigureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FigureViewController.h; sourceTree = "<group>"; };
+		011A4B1D1C09232700E5B76A /* FigureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FigureViewController.m; sourceTree = "<group>"; };
+		011A4B1F1C09232700E5B76A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		011A4B221C09232700E5B76A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		011A4B241C09232700E5B76A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011A4B4D1C0924DF00E5B76A /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		011A4B4F1C0A69BB00E5B76A /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		011A4B501C0A69BB00E5B76A /* Bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bridge.m; sourceTree = "<group>"; };
+		0F8829DC6072A52ADD2D40F8 /* Pods-DegreeX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DegreeX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DegreeX/Pods-DegreeX.debug.xcconfig"; sourceTree = "<group>"; };
+		47993F288373FC1FA5E201A0 /* Pods-DegreeX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DegreeX.release.xcconfig"; path = "Pods/Target Support Files/Pods-DegreeX/Pods-DegreeX.release.xcconfig"; sourceTree = "<group>"; };
+		559CF42805159435A723C13C /* libPods-DegreeX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DegreeX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		011A4B101C09232700E5B76A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011A4B4E1C0924DF00E5B76A /* SceneKit.framework in Frameworks */,
+				E7839222497F9F03FB3E03EA /* libPods-DegreeX.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011A4B0A1C09232700E5B76A = {
+			isa = PBXGroup;
+			children = (
+				011A4B151C09232700E5B76A /* DegreeX */,
+				011A4B141C09232700E5B76A /* Products */,
+				CCF36ECA0475B9F7C04EFA8C /* Pods */,
+				F50D2E108BC9202987ECB1B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		011A4B141C09232700E5B76A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				011A4B131C09232700E5B76A /* DegreeX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		011A4B151C09232700E5B76A /* DegreeX */ = {
+			isa = PBXGroup;
+			children = (
+				011A4B161C09232700E5B76A /* AppDelegate.h */,
+				011A4B171C09232700E5B76A /* AppDelegate.m */,
+				011A4B1C1C09232700E5B76A /* FigureViewController.h */,
+				011A4B1D1C09232700E5B76A /* FigureViewController.m */,
+				011A4B1F1C09232700E5B76A /* Assets.xcassets */,
+				011A4B211C09232700E5B76A /* Main.storyboard */,
+				011A4B241C09232700E5B76A /* Info.plist */,
+				011A4B191C09232700E5B76A /* Supporting Files */,
+				011A4B4F1C0A69BB00E5B76A /* Bridge.h */,
+				011A4B501C0A69BB00E5B76A /* Bridge.m */,
+			);
+			path = DegreeX;
+			sourceTree = "<group>";
+		};
+		011A4B191C09232700E5B76A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				011A4B1A1C09232700E5B76A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCF36ECA0475B9F7C04EFA8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F8829DC6072A52ADD2D40F8 /* Pods-DegreeX.debug.xcconfig */,
+				47993F288373FC1FA5E201A0 /* Pods-DegreeX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F50D2E108BC9202987ECB1B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				559CF42805159435A723C13C /* libPods-DegreeX.a */,
+				011A4B4D1C0924DF00E5B76A /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		011A4B121C09232700E5B76A /* DegreeX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011A4B271C09232700E5B76A /* Build configuration list for PBXNativeTarget "DegreeX" */;
+			buildPhases = (
+				FBD5EDBCC416B844D1B7065D /* Check Pods Manifest.lock */,
+				011A4B0F1C09232700E5B76A /* Sources */,
+				011A4B101C09232700E5B76A /* Frameworks */,
+				011A4B111C09232700E5B76A /* Resources */,
+				4ED5F89A3518133C51A4EB8F /* Embed Pods Frameworks */,
+				2A4206D7567CBDA2360C000E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DegreeX;
+			productName = DegreeX;
+			productReference = 011A4B131C09232700E5B76A /* DegreeX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		011A4B0B1C09232700E5B76A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Tyler Spaeth";
+				TargetAttributes = {
+					011A4B121C09232700E5B76A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 011A4B0E1C09232700E5B76A /* Build configuration list for PBXProject "DegreeX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 011A4B0A1C09232700E5B76A;
+			productRefGroup = 011A4B141C09232700E5B76A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				011A4B121C09232700E5B76A /* DegreeX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		011A4B111C09232700E5B76A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011A4B201C09232700E5B76A /* Assets.xcassets in Resources */,
+				011A4B231C09232700E5B76A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A4206D7567CBDA2360C000E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DegreeX/Pods-DegreeX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ED5F89A3518133C51A4EB8F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DegreeX/Pods-DegreeX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD5EDBCC416B844D1B7065D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		011A4B0F1C09232700E5B76A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011A4B511C0A69BB00E5B76A /* Bridge.m in Sources */,
+				011A4B1E1C09232700E5B76A /* FigureViewController.m in Sources */,
+				011A4B1B1C09232700E5B76A /* main.m in Sources */,
+				011A4B181C09232700E5B76A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		011A4B211C09232700E5B76A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011A4B221C09232700E5B76A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		011A4B251C09232700E5B76A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		011A4B261C09232700E5B76A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		011A4B281C09232700E5B76A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F8829DC6072A52ADD2D40F8 /* Pods-DegreeX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DegreeX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samplesizeofone.DegreeX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		011A4B291C09232700E5B76A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47993F288373FC1FA5E201A0 /* Pods-DegreeX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DegreeX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samplesizeofone.DegreeX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		011A4B0E1C09232700E5B76A /* Build configuration list for PBXProject "DegreeX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011A4B251C09232700E5B76A /* Debug */,
+				011A4B261C09232700E5B76A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011A4B271C09232700E5B76A /* Build configuration list for PBXNativeTarget "DegreeX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011A4B281C09232700E5B76A /* Debug */,
+				011A4B291C09232700E5B76A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 011A4B0B1C09232700E5B76A /* Project object */;
+}
