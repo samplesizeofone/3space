@@ -13,7 +13,8 @@
 @property (assign) CGPoint centerPoint;
 @property (assign) double startDistance;
 
-@property (strong) NSMutableSet *touches;
+@property (strong) UITouch *origin;
+@property (strong) UITouch *z;
 
 @end
 

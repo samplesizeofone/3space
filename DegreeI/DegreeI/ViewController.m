@@ -21,6 +21,23 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    if (touches.count != 2) {
+        return;
+    }
+    
+    NSArray *t = [touches allObjects];
+    self.z = t[1];
+    self.origin =  t[0];
+        NSDictionary *end = @{
+                              @"x": @(0),
+                              @"y": @(0)
+                              };
+        
+        NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+        [notificationCenter postNotificationName:@"distanceDidChange" object:nil userInfo:@{
+                                                                                            @"point": end,
+                                                                                            @"speed": @(0)
+                                                                                            }];
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -30,32 +47,22 @@
         return;
     }
     
-    CGPoint point1 = [touchControls[0] locationInView:self.view];
-    CGPoint point2 = [touchControls[1] locationInView:self.view];
+    CGPoint origin = [self.origin locationInView:self.view];
+    CGPoint z = [self.z locationInView:self.view];
     
-    if (self.centerPoint.x == 0 && self.centerPoint.y == 0) {
-        NSLog(@"reset");
-        self.centerPoint = [self centerForPoint1:point1 point2:point2];
-        self.startDistance = [self distanceBetweenPoint1:point1 point2:point2];
-    }
+    double distance = [self distanceBetweenPoint1:origin point2:z];
+    CGPoint center = [self centerForPoint1:origin point2:z];
     
-    double distance = [self distanceBetweenPoint1:point1 point2:point2] - self.startDistance;
-    CGPoint c = [self centerForPoint1:point1 point2:point2];
-    double x = c.x - self.centerPoint.x;
-    double y = self.centerPoint.y - c.y;
-    NSLog(@"%f %f %f", x, y, distance);
     
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    [notificationCenter postNotificationName:@"distanceDidChange" object:nil userInfo:@{@"x": @(x),@"y": @(y), @"z": @(distance)}];
-    
-    self.centerPoint = [self centerForPoint1:point1 point2:point2];
-    self.startDistance = [self distanceBetweenPoint1:point1 point2:point2];
-    
+    [notificationCenter postNotificationName:@"distanceDidChange" object:nil userInfo:@{@"x": @(center.x),@"y": @(center.y), @"z": @(distance)}];
+        
     NSLog(@"Here");
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    self.centerPoint = CGPointMake(0, 0);
+    self.origin = nil;
+    self.z = nil;
 }
 
 - (void)didReceiveMemoryWarning {
