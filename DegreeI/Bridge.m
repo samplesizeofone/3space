@@ -17,24 +17,23 @@
     
     self.socket = [[AsyncSocket alloc] initWithDelegate:self];
     NSError *e;
-    [self.socket connectToHost:@"10.0.1.14" onPort:1338 error:&e];
+    [self.socket connectToHost:@"169.254.22.22" onPort:1342 error:&e];
     NSLog(@"%@", e);
     return self;
 }
 
 - (void)distanceDidChange:(NSNotification *)notification {
     NSDictionary *info = notification.userInfo;
-    NSNumber *zNumber = info[@"z"];
-    double z = zNumber.doubleValue;
-    NSNumber *xNumber = info[@"x"];
-    double x = xNumber.doubleValue;
-    NSNumber *yNumber = info[@"y"];
-    double y = yNumber.doubleValue;
+    NSDictionary *point = info[@"point"];
+    double speed = [info[@"speed"] doubleValue];
+    
+    double x = [(point[@"x"]) doubleValue];
+    double y = [(point[@"y"]) doubleValue];
 
     double p[4];
     p[0] = x;
     p[1] = y;
-    p[2] = z;
+    p[2] = speed;
     
     char *a = (char *)(&(p[3]));
     

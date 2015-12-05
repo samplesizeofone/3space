@@ -10,10 +10,8 @@
 
 @interface ViewController : UIViewController
 
-@property (assign) CGPoint centerPoint;
-@property (assign) double startDistance;
-
-@property (strong) NSMutableSet *touches;
+@property (assign) CGPoint start;
+@property (assign) double time;
 
 @end
 

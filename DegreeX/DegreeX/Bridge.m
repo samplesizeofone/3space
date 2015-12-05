@@ -9,7 +9,7 @@
     self.connectedSockets = [[NSMutableArray alloc] init];
     [self.listenSocket setRunLoopModes:[NSArray arrayWithObject:NSRunLoopCommonModes]];
     NSError *e;
-   [self.listenSocket acceptOnInterface:@"10.0.1.14" port:1338 error:&e];
+   [self.listenSocket acceptOnInterface:@"169.254.22.22" port:1342 error:&e];
     
     NSLog(@"Error %@", e);
 

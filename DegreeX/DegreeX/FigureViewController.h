@@ -13,5 +13,7 @@
 @property (strong) AsyncSocket *listenSocket;
 @property (strong) NSMutableArray *connectSockets;
 
+@property (strong) NSMutableArray *cubes;
+
 @end
 
